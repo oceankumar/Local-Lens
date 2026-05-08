@@ -10,7 +10,7 @@ const filters = ["All Languages", "Hindi", "English", "Punjabi", "Malayalam"];
 function MoviesPage() {
   const [activeFilter, setActiveFilter] = useState(filters[0]);
 
-  const featuredMovie = movies.find((movie) => movie.featured) ?? movies[0];
+  const featuredMovie = movies.find((movie) => movie.featured) ?? movies[2];
 
   const filteredMovies =
     activeFilter === "All Languages"
